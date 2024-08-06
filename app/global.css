@@ -2,6 +2,62 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'DoubleHomicide';
+  src: url('/fonts/DoubleHomicide.eot'); /* Notice the leading slash */
+  src: url('/fonts/DoubleHomicide.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/DoubleHomicide.woff2') format('woff2'),
+      url('/fonts/DoubleHomicide.woff') format('woff'),
+      url('/fonts/DoubleHomicide.ttf') format('truetype'),
+      url('/fonts/DoubleHomicide.svg#DoubleHomicide') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'KiwiSoda';
+  src: url('/fonts/KiwiSoda.eot');
+  src: url('/fonts/KiwiSoda.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/KiwiSoda.woff2') format('woff2'),
+      url('/fonts/KiwiSoda.woff') format('woff'),
+      url('/fonts/KiwiSoda.ttf') format('truetype'),
+      url('/fonts/KiwiSoda.svg#KiwiSoda') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Linear Beam';
+  src: url('/fonts/LinearBeam05.eot');
+  src: url('/fonts/LinearBeam05.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/LinearBeam05.woff2') format('woff2'),
+      url('/fonts/LinearBeam05.woff') format('woff'),
+      url('/fonts/LinearBeam05.ttf') format('truetype'),
+      url('/fonts/LinearBeam05.svg#LinearBeam05') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Radwave Demo';
+  src: url('/fonts/RadwaveDemoRegular.eot');
+  src: url('/fonts/RadwaveDemoRegular.eot?#iefix') format('embedded-opentype'),
+      url('/fonts/RadwaveDemoRegular.woff2') format('woff2'),
+      url('/fonts/RadwaveDemoRegular.woff') format('woff'),
+      url('/fonts/RadwaveDemoRegular.ttf') format('truetype'),
+      url('/fonts/RadwaveDemoRegular.svg#RadwaveDemoRegular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+
 ::selection {
   background-color: #47a3f3;
   color: #fefefe;
@@ -88,7 +144,7 @@ html {
 .prose h2,
 h3,
 h4 {
-  @apply font-medium tracking-tighter !important;
+  @apply font-radwave text-sm !important;
 }
 
 .prose strong {

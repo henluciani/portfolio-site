@@ -8,6 +8,10 @@ export default {
       fontFamily: {
         sans: ['var(--font-geist-sans)'],
         mono: ['var(--font-geist-mono)'],
+        doubleHomicide: ['DoubleHomicide', 'sans-serif'],
+        kiwiSoda: ['KiwiSoda', 'sans-serif'],
+        linearBeam: ['Linear Beam', 'sans-serif'],
+        radwave: ['Radwave Demo', 'sans-serif'], // Add your custom font here
       },
       typography: {
         quoteless: {
