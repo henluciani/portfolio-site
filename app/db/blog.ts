@@ -30,7 +30,13 @@ function getMDXFiles(dir) {
   return fs.readdirSync(dir).filter((file) => path.extname(file) === '.mdx');
 }
 
-function readMDXFile(filePath) {
+function readMDXFile(filePath: string): any {
+  // Ensure the file path is an absolute path and the file exists
+  if (!path.isAbsolute(filePath) || !fs.existsSync(filePath)) {
+    throw new Error('Invalid file path');
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-call
   let rawContent = fs.readFileSync(filePath, 'utf-8');
   return parseFrontmatter(rawContent);
 }
